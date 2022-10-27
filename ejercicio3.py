@@ -3,13 +3,15 @@ class alumno():
         self.nombre= nombre
         self.nota= nota
         def __str__(self):
-            return "nombre: {}, nota: {}".format(self.nombre, self.nota)
-        print("el alumno se ha creado con éxito")
-calificación=(int("¿Qué nota ha sacado el alumno?"))
-if calificación >= 5:
-    print("el alumno ha aprobado")
-    else:
-        print("el alumno ha suspendido")   
+            return "El alumno {} se ha creado con éxito".format(self.nombre)
+        def calificacion(nota):
+            if int(nota) >= 5:
+                return "alumno aprobado"
+            else:
+                return "alumno suspenso"
+alumno2 = alumno("Jaime Cortezon",7)
+print(alumno2)
+
     
 
 
